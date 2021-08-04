@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-west-2",
+      "eventTime": "2021-08-03T19:38:57.284Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AIDAWFEOI5QE6RZ4IUW4S"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "37.214.52.87"
+      },
+      "responseElements": {
+        "x-amz-request-id": "W6TR08GWSJ6J3BHT",
+        "x-amz-id-2": "2MVEmJ+N+lLHNBoA/ZP1agxiW1dtvKkktPNEKEIWfLnP1QbCpTmQ8e6J9LBFTwCigGjvkFujXZrMz/Mk58Ai0XHmjvx4G9Tu"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "image-uploaded",
+        "bucket": {
+          "name": "eugene-ivanov-training-imageholder-bucket",
+          "ownerIdentity": {
+            "principalId": "A2NCM5RPJRA95R"
+          },
+          "arn": "arn:aws:s3:::eugene-ivanov-training-imageholder-bucket"
+        },
+        "object": {
+          "key": "folder-for-images/8e8c725b-5d41-4bb4-9046-3673c1a6321c_part.png",
+          "size": 14893,
+          "eTag": "0af3865bc86abdb682bf79477d183224",
+          "sequencer": "0061099B596D2C7AA9"
+        }
+      }
+    }
+  ]
+}

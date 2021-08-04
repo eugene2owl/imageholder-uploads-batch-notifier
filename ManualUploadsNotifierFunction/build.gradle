@@ -1,0 +1,32 @@
+buildscript {
+    ext {
+        aws_version = "1.11.1000"
+    }
+}
+
+plugins {
+    id "java"
+}
+
+group "manual.imageholder"
+version "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.amazonaws:aws-lambda-java-core:1.2.1"
+    implementation "com.amazonaws:aws-lambda-java-events:3.6.0"
+
+    // AWS SDK v1
+    implementation "com.amazonaws:aws-java-sdk-s3:$aws_version"
+    implementation "com.amazonaws:aws-java-sdk-sqs:$aws_version"
+    implementation "com.amazonaws:aws-java-sdk-sns:$aws_version"
+
+    testImplementation "junit:junit:4.13.1"
+}
+
+test {
+    useJUnitPlatform()
+}
