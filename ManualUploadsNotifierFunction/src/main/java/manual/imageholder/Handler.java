@@ -17,9 +17,6 @@ import manual.imageholder.util.SnsNotificationTextBuilder;
 import java.util.List;
 import java.util.stream.Collectors;
 
-// TODO doc comments and publish to git repository
-// TODO move a CloudFormation to a separate Git repository
-
 /**
  * AWS Lambda Request Handler which
  * <ol>
