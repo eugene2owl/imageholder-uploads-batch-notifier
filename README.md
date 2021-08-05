@@ -11,7 +11,7 @@ Lambda function defined in the "ManualUploadsNotifierFunction" module should be 
 
 ### Automatically triggered Lambda
 Lambda function defined in the "TriggeredUploadsNotifierFunction" module should be triggered by attached AWS SQS queue.
-<img src="https://raw.githubusercontent.com/eugene2owl/imageholder-uploads-batch-notifier/assets/auto-truggered-lambda.png" alt="drawing" width="800"/>
+<img src="https://raw.githubusercontent.com/eugene2owl/imageholder-uploads-batch-notifier/assets/auto-triggered-lambda.png" alt="drawing" width="800"/>
 
 ### Update code of the remote Lambda function
 Update code of the remote Lambda function according local code of the Handler class right from the IntelliJ IDE.
