@@ -7,7 +7,7 @@ Lambda function defined in the "ManualUploadsNotifierFunction" module should be 
 * Via attached AWS API Gateway
 * Via web application which uses AWS SDK to build Lambda client
 * Via AWS CloudWatch scheduled event
-<img src="https://raw.githubusercontent.com/eugene2owl/imageholder-uploads-batch-notifier/assets/manually-triggered-lambda.png" alt="drawing" width="800"/>
+<img src="https://raw.githubusercontent.com/eugene2owl/imageholder-uploads-batch-notifier/ManualUploadsNotifierFunction/src/main/assets/manually-triggered-lambda.png" alt="drawing" width="800"/>
 
 ### Automatically triggered Lambda
 Lambda function defined in the "TriggeredUploadsNotifierFunction" module should be triggered by attached AWS SQS queue.
