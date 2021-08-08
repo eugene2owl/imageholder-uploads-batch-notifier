@@ -8,7 +8,7 @@ phases:
       - gradle build
       - sam package
         --template-file sam-template.yml
-        --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
+        --s3-bucket codepipeline-eu-west-2-418870675604
         --output-template-file packaged-template.yml
 artifacts:
   files:
