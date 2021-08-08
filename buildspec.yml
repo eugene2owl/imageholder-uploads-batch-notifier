@@ -5,13 +5,18 @@ phases:
       java: corretto11
   build:
     commands:
-      - cd ManualUploadsNotifierFunction/
-      - gradle clean build
-      - cd ..
+#      - cd ManualUploadsNotifierFunction/
+#      - gradle clean build
+#      - cd ..
+      - sam build --template template.yaml --build-dir .aws-sam/build
       - sam package
-        --template-file template.yaml
+        --template-file .aws-sam/build/template.yaml
+        --output-template-file .aws-sam/build/packaged-template.yaml
         --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
-        --output-template-file packaged-template.yml
+#      - sam package
+#        --template-file template.yaml
+#        --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
+#        --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
