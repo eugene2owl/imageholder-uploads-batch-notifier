@@ -5,7 +5,9 @@ phases:
       java: corretto11
   build:
     commands:
+      - cd ManualUploadsNotifierFunction/
       - gradle build
+      - cd ..
       - sam package
         --template-file sam-template.yaml
         --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
