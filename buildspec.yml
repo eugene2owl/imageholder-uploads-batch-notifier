@@ -1,10 +1,15 @@
-version: 0.1
+version: 0.2
 phases:
   install:
+    runtime-versions:
+      java: corretto11
+  build:
     commands:
-      - aws cloudformation package --template-file template.yaml --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2 --output-template-file outputSamTemplate.yaml
+      - gradle build
+      - sam package
+        --template-file template.yml
+        --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
+        --output-template-file packaged-template.yml
 artifacts:
-  type: zip
   files:
-    - template.yaml
-    - outputSamTemplate.yaml
+    - packaged-template.yml
