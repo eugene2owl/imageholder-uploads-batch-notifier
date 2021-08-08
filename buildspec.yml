@@ -11,7 +11,7 @@ phases:
       - sam build --template template.yaml --build-dir .aws-sam/build
       - sam package
         --template-file .aws-sam/build/template.yaml
-        --output-template-file .aws-sam/build/packaged-template.yaml
+        --output-template-file .aws-sam/build/packaged-template.yml
         --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
 #      - sam package
 #        --template-file template.yaml
@@ -19,4 +19,4 @@ phases:
 #        --output-template-file packaged-template.yml
 artifacts:
   files:
-    - packaged-template.yml
+    - .aws-sam/build/packaged-template.yml
