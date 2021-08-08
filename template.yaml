@@ -15,7 +15,7 @@ Resources:
       FunctionName: Imageholder-manual-uploads-batch-notifier-2
       Role: arn:aws:iam::423352658953:role/ImageHolderLambdaRole
       Description: Function (manually invoked) which receives messages from SQS queue and sends notification to SNS topic.
-      CodeUri: ManualUploadsNotifierFunction
+      CodeUri: ./ManualUploadsNotifierFunction
       Handler: manual.imageholder.Handler::handleRequest
       Runtime: java11
       MemorySize: 704
