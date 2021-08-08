@@ -39,6 +39,3 @@ Outputs:
   ManualUploadsNotifierFunction:
     Description: "ManualUploadsNotifier Lambda Function ARN"
     Value: !GetAtt ManualUploadsNotifierFunction.Arn
-  ManualUploadsNotifierFunctionIamRole:
-    Description: "Explicit IAM Role defined for ManualUploadsNotifier function"
-    Value: !GetAtt ManualUploadsNotifierFunction.Role
