@@ -6,10 +6,10 @@ phases:
   build:
     commands:
       - cd ManualUploadsNotifierFunction/
-      - gradle build
+      - gradle clean build
       - cd ..
       - sam package
-        --template-file sam-template.yaml
+        --template-file template.yaml
         --s3-bucket cf-templates-16dsvbtfx7fso-eu-west-2
         --output-template-file packaged-template.yml
 artifacts:
