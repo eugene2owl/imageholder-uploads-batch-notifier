@@ -41,4 +41,4 @@ Outputs:
     Value: !GetAtt ManualUploadsNotifierFunction.Arn
   ManualUploadsNotifierFunctionIamRole:
     Description: "Explicit IAM Role defined for ManualUploadsNotifier function"
-    Value: !GetAtt ManualUploadsNotifierFunction.Role.Arn
+    Value: !GetAtt ManualUploadsNotifierFunctionRole.Arn
