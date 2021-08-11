@@ -51,7 +51,7 @@ public class Handler implements RequestHandler<Object, String> {
         logger = context.getLogger();
         var sqsMessages = retrieveAndDeleteSqsMessagesFromQueue();
         buildAndPublishSnsMessageToTopic(sqsMessages);
-        return sqsMessages.size() + " SQS messages has been processed.";
+        return sqsMessages.size() + " SQS messages has been processed. (version 1)";
     }
 
     private List<Message> retrieveAndDeleteSqsMessagesFromQueue() {
